@@ -1,0 +1,113 @@
+/* navbar  */
+.navbar{
+    display: flex;
+    background-color: transparent;
+    margin: -8px;
+    /* height: 20px; */
+
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    
+}
+
+.navbar li{
+    display: block;
+    padding: 10px;
+}
+
+.navbar a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.navbar li:hover{
+    background-color: rgba(0, 255, 255, 0.808);
+    border-radius: 15px;
+}
+
+.navbar h1{
+    color: white;
+    margin-left: 10px;
+}
+
+span{
+    color: rgba(0, 255, 255, 0.808);
+}
+
+/* body  */
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.content{
+    color: white;
+    /* border: 2px solid red; */
+    height: 280px;
+    width: 500px;
+    margin-top: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 25px;
+    box-shadow: 2px rgba(0, 255, 255, 0.808);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.808);
+}
+
+.content .btn{
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color:  rgba(0, 255, 255, 0.808);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn:hover{
+    background-color: rgba(0, 255, 255, 0.808);
+    transition-delay: 0.1s;
+    color: black;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    position: relative;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding-top: 25px;
+}
+
+@media (max-width:600px) {
+    .navbar ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: gray; */
+    }
+    .navbar ul li {
+        padding: 15px;
+
+    }
+}
